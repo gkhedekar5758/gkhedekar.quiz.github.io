@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .HighScore{
+                display: flex;
+                justify-content: center;
+                font-size: 2rem;
+                color: rgb(0, 132, 255);
+                padding: 20px;
+                margin:20px;
+                justify-content: space-around;
+            }
+            .center{
+                display: flex;
+                justify-content: center;
+                padding: 1rem;
+            }
+            button{
+                background-color: blue;
+                color: white;
+                font-size: 1.2rem;
+                font-weight:bold;
+                margin:1rem;
+                padding: 1rem;
+                border-style: solid;
+                border-radius: 10px;
+            }
+            button:hover{
+                background-color: rgb(58, 58, 240);
+                color: white;
+            }
+            label{
+                font-size: 1.2rem;
+                font-family: cursive;
+                padding-right: 1rem;
+            }
+            .highScoreContainer{
+                border-style: solid;
+                border-width: 2px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                margin: 10px;
+            }
+            .congratsBanner{
+                border-style: solid;border-color: blue; border-radius: 5px; padding: 10px;
+                width: 80%;
+               left: 7%;
+               position: relative;
+               font-size: 1.5rem;
+            }
+            @keyframes blinker {
+                50%{
+                    opacity: 0;
+                }
+            }
+        </style>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    </head>
+    <body style="background-color: rgb(174, 224, 240);">
+        <div class="highScoreContainer">
+            <!-- <label style="position: absolute; left: 10%;"> High Score</label>
+            <div class="HighScore">
+                <label style=" left: 10%;"> Cate</label>
+                <div id="user"> UserName: </div>
+                <div id="score"> Score : </div>
+                <div id="timing"> Timing :</div>
+            </div> -->
+            
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Science: Computers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Easy</th>
+                    <td id="c18EasyUsername">Mark</td>
+                    <td id="c18EasyScore">30</td>
+                    <td id="c18EasyTime">2.41</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Medium</th>
+                    <td id="c18MediumUsername">Jacob</td>
+                    <td id="c18MediumScore">45</td>
+                    <td id="c18MediumTime">4.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Hard</th>
+                    <td id="c18HardUsername">Jacob</td>
+                    <td id="c18HardScore">45</td>
+                    <td id="c18HardTime">4.5</td>
+                  </tr>
+                </tbody>
+                <!-- category 2 -->
+
+                <thead>
+                    <tr>
+                      <th scope="col">Science : Mathmatics</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Easy</th>
+                    <td id="c19EasyUsername">Jacob</td>
+                    <td id="c19EasyScore">45</td>
+                    <td id="c19EasyTime">4.5</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Medium</th>
+                    <td id="c19MediumUsername">Jacob</td>
+                    <td id="c19MediumScore">45</td>
+                    <td id="c19MediumTime">4.5</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hard</th>
+                    <td id="c19HardUsername">Jacob</td>
+                    <td id="c19HardScore">45</td>
+                    <td id="c19HardTime">4.5</td>
+                    </tr>
+                  </tbody>
+
+                <!-- category 3 -->
+                  <thead>
+                    <tr>
+                      <th scope="col">General Knowledge</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Easy</th>
+                    <td id="c9EasyUsername">Jacob</td>
+                    <td id="c9EasyScore">45</td>
+                    <td id="c9EasyTime">4.5</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Medium</th>
+                      <td id="c9MediumUsername">Jacob</td>
+                      <td id="c9MediumScore">45</td>
+                      <td id="c9MediumTime">4.5</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hard</th>
+                      <td id="c9HardUsername">Jacob</td>
+                      <td id="c9HardScore">45</td>
+                      <td id="c9HardTime">4.5</td>
+                    </tr>
+                  </tbody>
+
+
+                
+              </table>
+        </div>
+        <div class="highScoreContainer">
+            <label style="position: absolute; left: 10%;"> Your Score</label>
+            <div class="HighScore">
+                <div id="UserScore"> Score : </div>
+                <div id="UserTiming"> Timing :</div>
+            </div>
+        </div>
+        <div class="UserHighScoreArea" style="display: none;">
+            <div class="congratsBanner"><p style="font-family: Arial, Helvetica, sans-serif; font-size: 2.2rem; animation:blinker 1s linear infinite;" >Congratulations!</p> Your score is higher than the last highest score
+            Enter your UserName to save your score as high score
+            </div>
+            <div class="center"><label>UserName : </label><input type="text" id="uname"/></div>
+            <div class="center"><button id="btnSave">Save</button></div>
+        </div>
+    </body>
+    <script src="End.js"></script>
+</html>

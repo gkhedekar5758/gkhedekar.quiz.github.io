@@ -1,0 +1,138 @@
+
+.gameContent{
+ border-style: solid;   
+ border-color: blue;
+ border-radius: 10px;
+ background-color: rgb(146, 214, 236);
+ box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+ transform: translateY(-0.1rem);
+ margin-top: 20%;
+ padding:20px;
+}
+.gameTitle{
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+}
+.question{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    border-style: solid;
+    border-color: rgb(107, 43, 226);
+    border-radius: 10px;
+}
+.question p{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: rgba(3, 68, 245, 0.726);
+}
+.option{
+    margin-bottom: 10px;
+    padding:2px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(46, 46, 245);
+    border-radius: 8px;
+    background-color:rgb(146, 214, 236); ;
+    display: flex;
+}
+.option:hover{
+    cursor: pointer ;
+    box-shadow:0 0.4rem 1.4rem 1.4rem rgba(40, 172, 238, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.choice-prefix{
+    /* padding-top: 5px;
+    padding-right: 15px; */
+    /* padding-bottom: 1rem;
+    padding-right: 1rem; */
+    padding: 1rem 2rem ;
+    background-color: #56a5eb;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.answer{
+    width: 100%;
+    padding:1.5rem;
+    color: rgba(3, 68, 245, 0.726);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.correct{
+    background-color: green;
+    color: white;
+}
+.incorrect{
+    background-color: red;
+    color: white;
+}
+.progressContent{
+    display: flex;
+    position: absolute;
+    margin-top: 30%;
+    left: -50%;
+    /* padding-right: 20px;
+    padding-left: 20px; */
+}
+.progressText{
+    color:#56a5eb;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+}
+.progressBar{
+    border-style: solid;
+    border-color: #1f8ae7;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    position:absolute;
+    top:95%;
+}
+.progressBarFull{
+    background-color: #469fec;
+}
+.scoreContent{
+    display: flex;
+    position: absolute;
+    margin-top: 30%;
+}
+.scoreContent p{
+    color:#56a5eb;
+    font-weight: bolder;
+    font-size: 2.4rem;
+}
+.timerRegion{
+    color:#56a5eb;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    padding-left: 30%;
+}
+.questionTimer{
+    color:#56a5eb;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    padding-left: 30%;
+    top: 20%;
+    left: 20%;
+    display: flex;
+    position: relative;
+}
+.CategoryContent{
+    display: flex;
+    position: absolute;
+    margin-top: 400%;
+    left: -50%;
+}
+.DiffContent{
+    display: flex;
+    position: absolute;
+    margin-top: 400%;
+}

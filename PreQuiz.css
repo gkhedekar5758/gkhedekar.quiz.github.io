@@ -1,0 +1,25 @@
+* {
+    background-color: #56a5eb;;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 30%;
+/* align-items: center;
+justify-content: center; */
+    
+}
+.gameParameter{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

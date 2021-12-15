@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="progressContent">
+                    <div class="progressText">Question 1 of 1</div>
+                    <div class="progressBar">
+                        <div class="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="column sm-12 md-6 lg-3 CategoryContent">
+                    <div id="categoryText" class="progressText">Category :</div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="timerRegion">
+                    <p>Timer :</p>
+                </div>
+                <!-- <div class="questionTimer">
+                        <p> Question Timer : </p>
+                    </div> -->
+                <div class="gameContent">
+                    <div id="game" class="mainGame">
+                        <div class="gameTitle">Computer Quiz</div>
+                        <div class="question">
+                            <p>Question will appear here</p>
+                        </div>
+
+                        <div class="option">
+                            <p class="choice-prefix">A</p>
+                            <p class="answer" id="opt1"></p>
+                        </div>
+                        <div class="option">
+                            <p class="choice-prefix">B</p>
+                            <p class="answer" id="opt2"></p>
+                        </div>
+                        <div class="option">
+                            <p class="choice-prefix">C</p>
+                            <p class="answer" id="opt3"></p>
+                        </div>
+                        <div class="option">
+                            <p class="choice-prefix">D</p>
+                            <p class="answer" id="opt4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="scoreContent">
+                    <p>Score 0</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="DiffContent">
+                    <p id="DifficultyText" class="progressText">Difficulty</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Quiz.js"></script> 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

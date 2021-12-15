@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PreQuiz.css">
+    </link>
+    <style>
+        * {
+            background-color: #56a5eb;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col-12" >
+                <div class=" w-50  ">
+                    <h1>Select Game Parameter</h1>
+                    <label for="numberOfQuestions" class="fw-bold p-2">Number of Questions :</label>
+                    <input id="numberOfQuestions" class="form-control p-2" type="number" min="10" max="50" value="10"
+                        title="numberOfQuestions">
+                    <label for="category" class="fw-bold p-2">Select area of quiz :</label>
+                    <select id="category" title="category" class="form-control p-2">
+                        <!-- <option value="">Select</option> -->
+                        <option value="18">Science: Computers</option>
+                        <option value="19">Science : Mathmatics</option>
+                        <option value="9">General Knowledge</option>
+                    </select>
+                    <label for="difficulty" class="fw-bold p-2">Select Difficulty :</label>
+                    <select id="difficulty" title="difficulty" class="form-control p-2">
+                        <!-- <option value="">Any difficulty</option> -->
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <div class="p-2">
+                        <input type="button" value="Bring It ON !!" class="btn btn-primary" onclick="startGame()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="PreQuiz.js"></script>
+</body>
+
+</html>
